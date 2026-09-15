@@ -1,0 +1,106 @@
+{
+  "clip": "clip_01",
+  "frames": 190,
+  "iou_threshold": 0.5,
+  "pred_file": "annotations/clip_01/gt.txt",
+  "gt_file": "friend/clip_01/gt.txt",
+  "pred_label": "PRED annotations/clip_01/gt.txt",
+  "gt_label": "GT   friend/clip_01/gt.txt",
+  "metrics": {
+    "HOTA": 0.657,
+    "DetA": 0.609,
+    "AssA": 0.7153,
+    "LocA": 0.8324,
+    "IDF1": 0.8579,
+    "IDTP": 471,
+    "IDFP": 7,
+    "IDFN": 149,
+    "MOTA": 0.7484,
+    "MOTP": 0.8088,
+    "IDSW": 0,
+    "FP": 7,
+    "FN": 149,
+    "GT_boxes": 620,
+    "PRED_boxes": 478
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.8579234972677595,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 0.7483870967741936,
+        "required": 0.75,
+        "passed": false
+      },
+      "MOTP": {
+        "value": 0.8088012759472522,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": false
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [],
+    "partially_covered_gt_tracks": [
+      {
+        "gt_track": 6,
+        "covered": 29,
+        "gt_length": 79,
+        "ratio": 0.37
+      },
+      {
+        "gt_track": 5,
+        "covered": 31,
+        "gt_length": 79,
+        "ratio": 0.39
+      },
+      {
+        "gt_track": 8,
+        "covered": 18,
+        "gt_length": 36,
+        "ratio": 0.5
+      },
+      {
+        "gt_track": 4,
+        "covered": 78,
+        "gt_length": 101,
+        "ratio": 0.77
+      }
+    ],
+    "ghost_pred_tracks": [],
+    "id_switches": [],
+    "loose_boxes": [
+      {
+        "frame": 125,
+        "gt_track": 6,
+        "pred_track": 7,
+        "iou": 0.534
+      },
+      {
+        "frame": 126,
+        "gt_track": 6,
+        "pred_track": 7,
+        "iou": 0.557
+      },
+      {
+        "frame": 127,
+        "gt_track": 6,
+        "pred_track": 7,
+        "iou": 0.566
+      },
+      {
+        "frame": 128,
+        "gt_track": 6,
+        "pred_track": 7,
+        "iou": 0.585
+      }
+    ],
+    "n_gt_tracks": 8,
+    "n_pred_tracks": 8
+  }
+}
